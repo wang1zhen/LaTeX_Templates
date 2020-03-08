@@ -1,0 +1,51 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{My_note}
+
+\def\allfiles{}         %全文编译
+
+\title{Template of Note}
+\author{Wang Yizhen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+\thispagestyle{empty}
+\include{introduction}
+中文测试
+
+\begin{gather*}
+    \frac{\dif y}{\dif x}\\
+    \dx, \dy, \dz\\
+    x\frac{\p x}{\p y}
+\end{gather*}
+
+花体大写$\backslash mathscr$
+
+\begin{equation*}
+    \mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+\end{equation*}
+
+花体大写$\backslash mathcal$
+
+\begin{equation*}
+    \mathcal{ABCDEFGHIJKLMNOPQRSTUVWXYZ}
+\end{equation*}
+
+花体小写$\backslash mathcal$
+
+\begin{equation*}
+    \mathcal{abcdefghijklmnopqrstuvwxyz}
+\end{equation*}
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\setcounter{page}{1}
+
+\include{section1}
+
+
+\end{document}
